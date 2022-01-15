@@ -31,7 +31,7 @@ def stat(qq):
   url = "https://api.telegram.org/bot"+BOTT+"/sendphoto"
   data = {
     "chat_id": str(qq),
-    "photo": "Your Banner Image Link",
+    "photo": "https://telegra.ph/file/e680221a4d0f0e4925295.jpg",
     "caption": "Hello ! \n I'm Doenets.lk Exam Result Bot \n\n What does I Know \n\n • G.C.E. (A/L) EXAMINATION - 2020 \n • G.C.E. (O/L) EXAMINATION (After Rescrutiny) - 2019 \n • GRADE 5 SCHOLARSHIP EXAMINATION (AFTER APPES) - 2020 \n\n ~ @Venuja_Sadew 🇱🇰 ",
     "parse_mode": "HTML",
     "reply_markup": {
