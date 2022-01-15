@@ -19,9 +19,9 @@ import json
 import requests
 
 
-APP_ID= #my.telegram.org
-APP_HASH='' #my.telegram.org
-BOTT=''#@botfather
+APP_ID=7395896 #my.telegram.org
+APP_HASH='cd3998ddf318dad74d7c506731bc0abc' #my.telegram.org
+BOTT='5017475046:AAFRGf4ShWoqALZafavpB0weuYEhBjTQ8NE'#@botfather
 
 
 bot = TelegramClient('bot', APP_ID, APP_HASH).start(bot_token=BOTT)
@@ -32,18 +32,18 @@ def stat(qq):
   data = {
     "chat_id": str(qq),
     "photo": "Your Banner Image Link",
-    "caption": "Hello ! \n I'm Doenets.lk Bot \n\n What does I Know \n\n • G.C.E. (A/L) EXAMINATION - 2020 \n • G.C.E. (O/L) EXAMINATION (After Rescrutiny) - 2019 \n • GRADE 5 SCHOLARSHIP EXAMINATION (AFTER APPES) - 2020 \n\n ~ @Uvindu_Bro 🇱🇰 ",
+    "caption": "Hello ! \n I'm Doenets.lk Exam Result Bot \n\n What does I Know \n\n • G.C.E. (A/L) EXAMINATION - 2020 \n • G.C.E. (O/L) EXAMINATION (After Rescrutiny) - 2019 \n • GRADE 5 SCHOLARSHIP EXAMINATION (AFTER APPES) - 2020 \n\n ~ @Venuja_Sadew 🇱🇰 ",
     "parse_mode": "HTML",
     "reply_markup": {
         "inline_keyboard": [
             [
                 {
                     "text": "➕ Add me to your Group",
-                    "url": "https://t.me/DonentsLKBot?startgroup=new"
+                    "url": "http://t.me/TheExamResultBot?startgroup=new"
                 }, 
                 {
                     "text": "🔊 Channel",
-                    "url": "https://t.me/UvinduBro"
+                    "url": "https://t.me/VndBotSupport"
                 }
             ]
         ]
@@ -96,7 +96,7 @@ def Al(indexx):
         '<u>' + 'Exam Results' + '</u>' +  '\n' + '\n' +  sub1name + ' = ' + '<b>' + sub1result + '</b>' + '\n' + 
         sub2name + ' = '  + '<b>' + sub2result + '</b>' + '\n' +  sub3name + ' = '  + '<b>' + sub3result + '</b>' + '\n' + 
         sub4name + ' = '  + '<b>' + sub4result + '</b>' + '\n' +  sub5name + ' = '  + '<b>' + sub5result + '</b>' + '\n' + '\n' +
-        '✅ All the Data Verified by the Government' + '\n' +'~ @UvinduBro 🇱🇰 ')
+        '✅ All the Data Verified by the Government' + '\n' +'~ @TheExamResultBot 🇱🇰 ')
 
     return textt
 
@@ -141,7 +141,7 @@ def Ol(olindexx):
          sub4name + ' = '  + '<b>' + sub4result + '</b>' + '\n' +  sub5name + ' = '  + '<b>' + sub5result + '</b>' + '\n' +  
          sub6name + ' = '  + '<b>' + sub6result + '</b>' + '\n' +  sub7name + ' = '  + '<b>' + sub7result + '</b>' + '\n' + 
          sub8name + ' = '  + '<b>' + sub8result + '</b>' + '\n' +  sub9name + ' = '  + '<b>' + sub9result + '</b>' + '\n' + '\n' +
-         '✅ All the Data Verified by the Government' + '\n' +'~ @UvinduBro 🇱🇰 ')
+         '✅ All the Data Verified by the Government' + '\n' +'~ @TheExamResultBot 🇱🇰 ')
          
     return textt
 
@@ -167,14 +167,14 @@ def G5(g5indexx):
          'Name = '  + '<b>' + G5name + '</b>' + '\n' + 'District Rank = '  + '<b>' + G5drank + '</b>' + '\n' +  'Island Rank = '  + '<b>' + G5irank + '</b>' + '\n' + '\n' + '\n' +
          '<u>' + 'Exam Results' + '</u>' +  '\n' + '\n' +
          'Marks = ' + G5marks + '\n' + 'District / Medium Cut off Mark = ' + G5cutoffmarks + '\n' + '\n' +
-         '✅ All the Data Verified by the Government' + '\n' +'~ @UvinduBro 🇱🇰 ')
+         '✅ All the Data Verified by the Government' + '\n' +'~ @TheExamResultBot 🇱🇰 ')
 
     return textt
 
 
 @bot.on(events.NewMessage(pattern='/help'))
 async def help(event):
-    await event.respond('**This is Donents.lk Bot Help** \n \n To Get \n\n • (A/L)  Results - /al ```Index No``` \n • (O/L) Results - /ol ```Index No``` \n • G5 SCHOLARSHIP Results - /g5 ```Index No``` \n\n ~ @Uvindu_Bro 🇱🇰')
+    await event.respond('**This is Donents.lk Exam Result Bot Help** \n \n To Get \n\n • (A/L)  Results - /al ```Index No``` \n • (O/L) Results - /ol ```Index No``` \n • G5 SCHOLARSHIP Results - /g5 ```Index No``` \n\n ~ @TheExamResultBot. 🇱🇰')
     raise events.StopPropagation
 
 
@@ -220,7 +220,7 @@ async def G5result(event):
 
 
 def main():
-    """Start the bot. \n \n ~ @UvinduBro"""
+    """Start the bot. \n \n ~ @TheExamResultBot."""
     bot.run_until_disconnected()
 
 if __name__ == '__main__':
